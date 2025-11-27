@@ -1,0 +1,5 @@
+{
+  "name": "SpendScope",
+  "description": "SpendScope is a privacy-first, multi-currency expense tracker that helps you visualize your financial habits without leaving your browser.",
+  "requestFramePermissions": []
+}
