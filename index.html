@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="SpendScope - A smart, privacy-first personal expense tracker with multi-currency support.">
+    
+    <!-- Theme Colors for Light/Dark Mode -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+    
+    <!-- iOS Web App Capability -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SpendScope">
+
+    <title>SpendScope</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <!-- Browsers favor SVG favicons -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <!-- iOS strictly requires PNG for Home Screen icons (Recommended size: 180x180) -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- Android/Chrome PWA Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Tailwind CSS (CDN for compatibility) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        transition: background-color 0.3s ease;
+        /* Prevent elastic scrolling on iOS whole page */
+        overscroll-behavior-y: none; 
+      }
+      html.dark body {
+        background-color: #020617; /* slate-950 */
+      }
+
+      /* Fix for Date Input click area */
+      .custom-date-input::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        width: 100%; height: 100%;
+        opacity: 0; cursor: pointer;
+      }
+      
+      /* Remove Recharts focus outline */
+      .recharts-sector:focus,
+      .recharts-rectangle:focus, 
+      .recharts-surface:focus {
+        outline: none !important;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
