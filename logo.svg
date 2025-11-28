@@ -1,0 +1,29 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="rotate(-45 12 12)">
+    <!-- Legs - Emerald Green (#10b981) - Short Chubby -->
+    <g stroke="#10b981" stroke-width="4" stroke-linecap="round">
+      <path d="M6 8L4 6" />
+      <path d="M18 8L20 6" />
+      <path d="M6 16L4 18" />
+      <path d="M18 16L20 18" />
+    </g>
+    <!-- Tail - Extended to y=29 -->
+    <path d="M11 19L12 29L13 19Z" fill="#10b981" />
+
+    <!-- Head - Ellipse (Narrow Natural Oval Shape rx=3.6) -->
+    <ellipse cx="12" cy="5.5" rx="3.6" ry="5.5" fill="#10b981" />
+    
+    <!-- Eyes - Q-version Bigger (r=1.2), Spaced (10.5, 13.5), High (3.2) - Emerald-100 (#d1fae5) -->
+    <circle cx="10.5" cy="3.2" r="1.2" fill="#d1fae5"/>
+    <circle cx="13.5" cy="3.2" r="1.2" fill="#d1fae5"/>
+
+    <!-- Shell (The Coin) - Lighter Amber (#fcd34d) / Stroke Amber-500 (#f59e0b) -->
+    <circle cx="12" cy="13" r="7.5" fill="#fcd34d" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Money Symbol ($) - Amber-700 (#b45309) -->
+    <g stroke="#b45309" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 10V16" />
+      <path d="M10 11.5H13C14.5 11.5 14.5 10 13 10H11C9.5 10 9.5 11.5 11 11.5C12.5 11.5 12.5 13 11 13H13C14.5 13 14.5 14.5 13 14.5H9" />
+    </g>
+  </g>
+</svg>
